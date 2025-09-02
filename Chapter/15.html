@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagavad Gita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <style>
+        .navbox {
+            width: 100%;
+            height: auto;
+            /* background-color: aqua; */
+            position: fixed;
+            z-index: 1000;
+        }
+
+        nav {
+            background: linear-gradient(to right, #ececc5, #f8c971);
+            /* position: sticky; */
+        }
+
+        .boxbar {
+            width: 100%;
+            /* not full width, so it centers better */
+            /* height: 100%; */
+            z-index: 1;
+            padding: 17vh 0 5vh 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* center horizontally */
+            /* center vertically */
+
+        }
+
+
+        .bodypart {
+            background-color:whitesmoke;
+            z-index: 2;
+            /* padding: 0vh 3vh; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .abc {
+            transition: all 0.3s;
+        }
+
+        .abc:hover {
+            border: 1px solid #ffa600;
+            transform: scale(1.0001);
+            box-shadow: 0 14px 18px rgba(26, 25, 25, 0.2);
+        }
+
+        .box1 {
+            position: sticky;
+            top: 0px;
+        }
+
+        .card-ch {
+            color: #ffa600;
+        }
+
+        .CS {
+            font-size: 2.8vh;
+            line-height: 1.8;
+        }
+
+        .pqr {
+            transition: all 0.3s;
+        }
+
+        .pqr:hover {
+            background-color: #f8f9fa;
+            box-shadow: 0 0 20px 1px rgba(26, 25, 25, 0.2);
+            border-radius: 0.5rem;
+        }
+
+        .mainCh {
+            padding: 0vh 15vh;
+            text-align: center;
+        }
+
+        .box {
+            width: 80%;
+            font-size: larger;
+        }
+
+        .slok {
+            padding: 0vh 47vh;
+        }
+
+        @media screen and (max-width: 991px) {
+            .text {
+                /* display: none; */
+            }
+
+            .boxbar {
+                /* display: block; */
+                /* width: 150%; */
+                /* height: 100vh; */
+                /* background-color: aqua; */
+                padding: 13vh 0vh 2vh 0vh;
+            }
+
+            .box {
+                width: 100%;
+            }
+
+            .pqr {
+                padding: 0vh;
+                margin: 0vh;
+            }
+
+            .slok {
+                padding: 0vh;
+                font-size: medium;
+            }
+
+            .mainCh {
+                padding: 0vh 2vh;
+            }
+
+            .CS {
+                font-size: 2.3vh;
+                line-height: normal;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbox p-3">
+        <nav class="navbar rounded-2 navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../Bhagavad_Gita/abc.html">
+                    <h2>Bhagavad Gita</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="body">
+        <div class="box1 boxbar text-center" id="mcards">
+
+        </div>
+
+        <div class="box1 bodypart">
+            <div class="box">
+                <div id="vcards" class="row ch row-cols-1 g-2 g-lg-3">
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+
+        const urlCh = 'https://bhagavad-gita3.p.rapidapi.com/v2/chapters/15/';
+        const options1 = {
+            method: 'GET',
+            headers: {
+                'x-rapidapi-key': 'bcba844d26msh2d333e852898b44p124f13jsn0e520c9be445',
+                'x-rapidapi-host': 'bhagavad-gita3.p.rapidapi.com'
+            }
+        };
+
+        try {
+            let p = fetch(urlCh, options1);
+            p.then((response) => {
+                return response.json();
+            }).then((Gita) => {
+                displaychpters(Gita);
+            });
+        } catch (error) {
+            console.error(error);
+        }
+
+        function displaychpters(Gita) {
+            let main = document.createElement("div");
+            main.className = "mainCh";
+            main.innerHTML = `
+                <h5 class="card-title card-ch">Chapter ${Gita.chapter_number}</h5>
+                <h2 class="card-subtitle mb-2 fw-bolder">${Gita.name_translated}</h2>
+                <p class="card-text CS text-start">${Gita.chapter_summary}</p>
+            `;
+
+            document.getElementById("mcards").appendChild(main);
+
+        }
+
+
+        var url = 'https://bhagavad-gita3.p.rapidapi.com/v2/chapters/15/verses/';
+        const options = {
+            method: 'GET',
+            headers: {
+                'x-rapidapi-key': 'bcba844d26msh2d333e852898b44p124f13jsn0e520c9be445',
+                'x-rapidapi-host': 'bhagavad-gita3.p.rapidapi.com'
+            }
+        };
+
+        try {
+            let v = fetch(url, options);
+            v.then((response) => {
+                return response.json();
+            }).then((Gita) => {
+                displayverses(Gita);
+            });
+        } catch (error) {
+            console.error(error);
+        }
+
+
+        function displayverses(Gita) {
+            // create a parent wrapper for all collapses
+            let parent = document.createElement('div');
+            parent.id = "accordionGita";
+
+            Gita.forEach((verse) => {
+                let col = document.createElement('div');
+                col.className = "col row row-cols-1 g-2 m-3 pqr p-3";
+
+                let description = "";
+                for (let tr of verse.translations) {
+                    if (tr.author_name === "Swami Gambirananda") {
+                        description += `<p class="card-text mb-3">${tr.description}</p>`;
+                    }
+                }
+
+                let collapse = `collapseExample${verse.verse_number}`;
+                let colPartId = `col-${verse.verse_number}`;
+
+                col.innerHTML = `
+                    <a class="d-flex flex-wrap w-100" onclick="abc(${verse.verse_number})" data-bs-toggle="collapse" href="#${collapse}" role="button" aria-expanded="false" aria-controls="${collapse}">
+                        <div class="col-12 col-lg-2">
+                            <span class="card-title card-ch">Verse ${verse.verse_number}</span>
+                        </div>
+                        <div class="col-12 col-lg-10">
+                            ${description}
+                        </div>
+                    </a>
+                    <div class="collapse" id="${collapse}" data-bs-parent="#accordionGita">
+                        <div class="card card-body" id="${colPartId}" style="width: 100%;">
+                            
+                        </div>
+                    </div>
+                `;
+
+                parent.appendChild(col);
+            });
+
+            document.getElementById("vcards").appendChild(parent);
+        }
+
+
+        function abc(vid) {
+            var urlv = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/15/verses/${vid}/`;
+            const options2 = {
+                method: 'GET',
+                headers: {
+                    'x-rapidapi-key': 'bcba844d26msh2d333e852898b44p124f13jsn0e520c9be445',
+                    'x-rapidapi-host': 'bhagavad-gita3.p.rapidapi.com'
+                }
+            };
+
+            try {
+                let v = fetch(urlv, options2);
+                v.then((response) => {
+                    return response.json();
+                }).then((Verse) => {
+                    displaycollapse(Verse);
+                });
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+
+
+
+        function displaycollapse(Verse) {
+            let colPartId = `col-${Verse.verse_number}`;
+            let coll = document.createElement('div');
+            coll.className = "coll text-center";
+            coll.innerHTML = `
+                <div>
+                    <h2 class="card-title">BG ${Verse.chapter_number}.${Verse.verse_number}</h2>
+                    <h4 class="card-subtitle mb-2 slok card-ch lh-base">${Verse.text}</h4>
+                </div>
+            `;
+
+            document.getElementById(colPartId).innerHTML="";
+            document.getElementById(colPartId).appendChild(coll);
+        }
+
+    </script>
+</body>
+
+</html>
