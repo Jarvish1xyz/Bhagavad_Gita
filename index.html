@@ -7,7 +7,7 @@
     <title>Bhagavad Gita</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./style.css">
     <style>
         .navbox {
             width: 100%;
@@ -78,16 +78,24 @@
             color: black;
         }
 
-        .card {
+        .abc {
             transition: all 0.3s;
         }
 
-        .card:hover {
+        .abc:hover {
             border: 1px solid #ffa600;
             transform: scale(1.0001);
             box-shadow: 0 14px 18px rgba(26, 25, 25, 0.2);
         }
 
+        .card-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            /* show only 3 lines */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
         .bodypart2 {
             z-index: 3;
@@ -147,7 +155,7 @@
     <div class="navbox p-3">
         <nav class="navbar rounded-2 navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand" href="../Bhagvad_Gita/abc.html">
                     <h2>Bhagavad Gita</h2>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -192,7 +200,7 @@
 
 
 
-    <div class="body abc ">
+    <div class="body">
         <div class="box1 boxbar">
             <img class="thumbnail img-fluid" src="https://bhagavadgita.io/_next/image?url=%2Fbanner2.png&w=1920&q=75"
                 alt="">
@@ -200,7 +208,7 @@
             <div class="text">
                 <h1 class="fw-bold display-4 text-light">Experience the Gita</h1>
                 <h2 class="fw-bold display-6 text-warning">Anywhere, Anytime</h2>
-                <a href="#" class="btn btn-light mt-3">Read now</a>
+                <a href="./Chapter/1.html" class="btn btn-light mt-3">Read now</a>
             </div>
         </div>
 
@@ -215,501 +223,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row ch row-cols-1 row-cols-lg-2 g-2 g-lg-3">
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 1</h6>
-                                    <h6 class="h2 card-title mb-2">Arjuna Visada Yoga</h6>
-                                    <p class="card-text">The first chapter of the Bhagavad Gita - "Arjuna Vishada Yoga"
-                                        introduces the setup, the setting, the characters and the circumstances that led to
-                                        the epic battle of Mahabharata, fought between the Pandavas and the Kauravas. It
-                                        outlines the reasons that led to the revelation of the Gita.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        47 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 2</h6>
-                                    <h6 class="h2 card-title mb-2">Sankhya Yoga</h6>
-                                    <p class="card-text">The second chapter of the Bhagavad Gita - "Sankhya Yoga" deals with
-                                        the concepts of knowledge and wisdom. It emphasizes the importance of understanding
-                                        the self and the distinction between the physical body and the eternal soul. This
-                                        chapter lays the foundation for the teachings that follow.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        72 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 3</h6>
-                                    <h6 class="h2 card-title mb-2">Karma Yoga</h6>
-                                    <p class="card-text">The third chapter of the Bhagavad Gita - "Karma Yoga" focuses on
-                                        the concept of selfless action and the importance of performing one's duty without
-                                        attachment to the results. It teaches that one should act according to their dharma
-                                        (duty) and offer the fruits of their actions to the divine.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        43 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 4</h6>
-                                    <h6 class="h2 card-title mb-2">Jnana Karma Sanyasa Yoga</h6>
-                                    <p class="card-text">This chapter discusses the relationship between knowledge, action,
-                                        and renunciation. It explains how selfless actions performed with the right
-                                        understanding lead to liberation.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        42 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 5</h6>
-                                    <h6 class="h2 card-title mb-2">Karma Sanyasa Yoga</h6>
-                                    <p class="card-text">This chapter compares the paths of renunciation and selfless
-                                        action, concluding that both can lead to liberation when performed with the right
-                                        attitude.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        29 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 6</h6>
-                                    <h6 class="h2 card-title mb-2">Dhyana Yoga</h6>
-                                    <p class="card-text">This chapter focuses on the practice of meditation and self-control
-                                        as means to attain spiritual realization.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        47 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 7</h6>
-                                    <h6 class="h2 card-title mb-2">Gyaan Vigyana Yoga</h6>
-                                    <p class="card-text">This chapter delves into the nature of knowledge and wisdom,
-                                        emphasizing the importance of both for spiritual growth.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        30 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 8</h6>
-                                    <h6 class="h2 card-title mb-2">Akshara Brahma Yoga</h6>
-                                    <p class="card-text">This chapter discusses the imperishable nature of the soul and the
-                                        process of attaining the supreme goal at the time of death.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        28 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 9</h6>
-                                    <h6 class="h2 card-title mb-2">Raja Vidya Raja Guhya Yoga</h6>
-                                    <p class="card-text">This chapter reveals the most confidential knowledge about devotion
-                                        and the supreme reality.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        34 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 10</h6>
-                                    <h6 class="h2 card-title mb-2">Vibhuti Yoga</h6>
-                                    <p class="card-text">This chapter describes the divine manifestations and opulences of
-                                        the Supreme Lord.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        42 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 11</h6>
-                                    <h6 class="h2 card-title mb-2">Vishwarupa Darshana Yoga</h6>
-                                    <p class="card-text">This chapter describes the universal form of the Supreme Lord
-                                        revealed to Arjuna.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        55 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 12</h6>
-                                    <h6 class="h2 card-title mb-2">Bhakti Yoga</h6>
-                                    <p class="card-text">This chapter explains the path of devotion and the qualities of a
-                                        true devotee.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        20 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 13</h6>
-                                    <h6 class="h2 card-title mb-2">Kshetra Kshetragna Vibhaga Yoga</h6>
-                                    <p class="card-text">This chapter discusses the distinction between the physical body
-                                        (field) and the soul (knower of the field).</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        35 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 14</h6>
-                                    <h6 class="h2 card-title mb-2">Gunatraya Vibhaga Yoga</h6>
-                                    <p class="card-text">This chapter explains the three modes of material nature: goodness,
-                                        passion, and ignorance.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        27 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 15</h6>
-                                    <h6 class="h2 card-title mb-2">Purushottama Yoga</h6>
-                                    <p class="card-text">This chapter describes the supreme person and the process of
-                                        liberation from material bondage.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        20 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 16</h6>
-                                    <h6 class="h2 card-title mb-2">Daivasura Sampad Vibhaga Yoga</h6>
-                                    <p class="card-text">This chapter discusses the divine and demoniac natures and their
-                                        effects on spiritual progress.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        24 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 17</h6>
-                                    <h6 class="h2 card-title mb-2">Shraddhatraya Vibhaga Yoga</h6>
-                                    <p class="card-text">This chapter explains the three types of faith and their influence
-                                        on actions and spiritual growth.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        28 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <div class="card" style="width: 100%; height:100%;">
-                                <div class="card-body">
-                                    <h6 class="card-title card-ch">Chapter 18</h6>
-                                    <h6 class="h2 card-title mb-2">Moksha Sanyasa Yoga</h6>
-                                    <p class="card-text">The final chapter summarizes the teachings of the Gita, discussing
-                                        liberation, renunciation, and the ultimate path to freedom.</p>
-                                    <a href="#" class="card-link">
-                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="list">
-                                            <g>
-                                                <g>
-                                                    <circle cx="4" cy="7" r="1"></circle>
-                                                    <circle cx="4" cy="12" r="1"></circle>
-                                                    <circle cx="4" cy="17" r="1"></circle>
-                                                    <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"></rect>
-                                                    <rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"></rect>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        78 Verses
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div id="cards" class="row ch row-cols-1 row-cols-lg-2 g-2 g-lg-3">
+
                 </div>
             </div>
         </div>
@@ -725,6 +240,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
