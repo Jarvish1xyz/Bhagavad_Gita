@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagavad Gita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .navbox {
+            width: 100%;
+            height: auto;
+            /* background-color: aqua; */
+            position: fixed;
+            z-index: 1000;
+        }
+
+        nav {
+            background: linear-gradient(to right, #ececc5, #f8c971);
+            /* position: sticky; */
+        }
+
+        .boxbar {
+            width: 100%;
+            /* not full width, so it centers better */
+            /* height: 100%; */
+            z-index: 1;
+            padding: 17vh 0 5vh 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* center horizontally */
+            /* center vertically */
+
+        }
+
+        .boxbar img {
+            width: 150%;
+            border-radius: 1rem;
+        }
+
+        .thumbnail {
+            padding: 0.25rem;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 0.375rem;
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        .text {
+            width: fit-content;
+            position: absolute;
+            /* top: 50%; */
+            /* left: 40%; */
+            z-index: 2;
+            /* font-size: xx-large; */
+            text-align: center;
+        }
+
+        .text h1,
+        .text h2 {
+            font-size: xx-larger;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .bodypart {
+            background-color: whitesmoke;
+            z-index: 2;
+            /* padding: 0vh 3vh; */
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .abc {
+            transition: all 0.3s;
+        }
+
+        .abc:hover {
+            border: 1px solid #ffa600;
+            transform: scale(1.0001);
+            box-shadow: 0 14px 18px rgba(26, 25, 25, 0.2);
+        }
+
+        .card-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            /* show only 3 lines */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .bodypart2 {
+            z-index: 3;
+        }
+
+        .box1 {
+            position: sticky;
+            top: 0px;
+        }
+
+        .card-ch {
+            color: #ffa600;
+        }
+
+        svg {
+            height: 1.5rem;
+        }
+
+        .card-link {
+            color: black;
+        }
+
+        @media screen and (max-width: 991px) {
+            .text {
+                /* display: none; */
+            }
+
+            .boxbar {
+                /* display: block; */
+                /* width: 150%; */
+                /* height: 100vh; */
+                /* background-color: aqua; */
+                padding: 13vh 0vh 2vh 0vh;
+            }
+
+            .boxbar img {
+                width: 100%;
+                height: 50vh;
+                /* or any height */
+                object-fit: cover;
+                /* crop instead of squishing */
+                object-position: center;
+                /* keep center part */
+                border: 0px;
+                border-radius: 0px;
+            }
+
+            .thumbnail {
+                padding: 0rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbox p-3">
+        <nav class="navbar rounded-2 navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../Bhagvad_Gita/abc.html">
+                    <h2>Bhagavad Gita</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="body">
+        <div class="box1 boxbar">
+            <img class="thumbnail img-fluid" src="https://bhagavadgita.io/_next/image?url=%2Fbanner2.png&w=1920&q=75"
+                alt="">
+
+            <div class="text">
+                <h1 class="fw-bold display-4 text-light">Experience the Gita</h1>
+                <h2 class="fw-bold display-6 text-warning">Anywhere, Anytime</h2>
+                <a href="./Chapter/1.html" class="btn btn-light mt-3">Read now</a>
+            </div>
+        </div>
+
+        <div class="box1 bodypart">
+            <div class="box p-3">
+                <div class="row">
+                    <div class="col">
+                        <div class="card bg-transparent border-0">
+                            <div class="h2 card-body">
+                                Chapters
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cards" class="row ch row-cols-1 row-cols-lg-2 g-2 g-lg-3">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="box1 bodypart2">
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
