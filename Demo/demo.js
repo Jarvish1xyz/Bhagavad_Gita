@@ -1,13 +1,23 @@
-
+ // bcba844d26msh2d333e852898b44p124f13jsn0e520c9be445
 // demo.js
-var ChapterNumber = 1;
+let ChapterNumber = 1;
 
 document.addEventListener("DOMContentLoaded", () => {
     ChapterNumber = localStorage.getItem("chapterId");
     console.log(ChapterNumber);
 })
 
-const urlCh = 'https://bhagavad-gita3.p.rapidapi.com/v2/chapters/1/';
+// const url = 'https://bhagavad-gita3.p.rapidapi.com/v2/chapters/5/';
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'x-rapidapi-key': 'bcba844d26msh2d333e852898b44p124f13jsn0e520c9be445',
+// 		'x-rapidapi-host': 'bhagavad-gita3.p.rapidapi.com'
+// 	}
+// };
+
+const urlCh = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/${ChapterNumber}/`;
+console.log(urlCh);
 const options1 = {
     method: 'GET',
     headers: {
@@ -20,20 +30,21 @@ try {
     let p = fetch(urlCh, options1);
     p.then((response) => {
         return response.json();
-    }).then((Gita) => {
-        displaychpters(Gita);
+    }).then((Gitach) => {
+        console.log(ChapterNumber, Gitach);
+        displaychpters(Gitach);
     });
 } catch (error) {
     console.error(error);
 }
 
-function displaychpters(Gita) {
+function displaychpters(Gitach) {
     let main = document.createElement("div");
     main.className = "mainCh";
     main.innerHTML = `
-                <h5 class="card-title card-ch">Chapter ${Gita.chapter_number}</h5>
-                <h2 class="card-subtitle mb-2 fw-bolder">${Gita.name_translated}</h2>
-                <p class="card-text CS text-start">${Gita.chapter_summary}</p>
+                <h5 class="card-title card-ch">Chapter ${Gitach.chapter_number}</h5>
+                <h2 class="card-subtitle mb-2 fw-bolder">${Gitach.name_translated}</h2>
+                <p class="card-text CS text-start">${Gitach.chapter_summary}</p>
             `;
 
     document.getElementById("mcards").appendChild(main);
@@ -41,7 +52,9 @@ function displaychpters(Gita) {
 }
 
 
-var url = 'https://bhagavad-gita3.p.rapidapi.com/v2/chapters/1/verses/';
+
+var url = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/{ChapterNumber}/verses/`;
+console.log(url);
 const options = {
     method: 'GET',
     headers: {
@@ -106,7 +119,8 @@ function displayverses(Gita) {
 
 
 window.abc = function(vid) {
-    var urlv = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/1/verses/${vid}/`;
+    var urlv = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/${ChapterNumber}/verses/${vid}/`;
+    console.log(urlv);
     const options2 = {
         method: 'GET',
         headers: {

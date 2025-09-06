@@ -208,7 +208,7 @@ function displaychpters(Gita) {
     Gita.forEach((chapter) => {
         let col = document.createElement('div');
         col.className = "col";
-
+        
         let id = chapter.id;
 
         col.innerHTML = `
@@ -245,7 +245,7 @@ function displaychpters(Gita) {
     });
 
     Gita.forEach((chapter) => {
-        let link = document.querySelector(`${id}`);
+        let link = document.querySelector(`#c${chapter.id}`);
         console.log(link);
         
         link.addEventListener("click", (e) => {
