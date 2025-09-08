@@ -51,7 +51,7 @@ function displaychpters(Gitach) {
             `;
 
     document.getElementById("mcards").appendChild(main);
-    urlV();
+    urlV();waadddsw
 }
 
 
