@@ -5,6 +5,7 @@ let ChapterNumber = 1;
 document.addEventListener("DOMContentLoaded", () => {
     ChapterNumber = localStorage.getItem("chapterId");
     console.log(ChapterNumber);
+    urlCh();
 })
 
 // const url = 'https://bhagavad-gita3.p.rapidapi.com/v2/chapters/5/';
@@ -16,26 +17,28 @@ document.addEventListener("DOMContentLoaded", () => {
 // 	}
 // };
 
-const urlCh = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/${ChapterNumber}/`;
-console.log(urlCh);
-const options1 = {
-    method: 'GET',
-    headers: {
-        'x-rapidapi-key': 'bcba844d26msh2d333e852898b44p124f13jsn0e520c9be445',
-        'x-rapidapi-host': 'bhagavad-gita3.p.rapidapi.com'
+function urlCh() {
+    const urlCh = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/${ChapterNumber}/`;
+    console.log(urlCh);
+    const options1 = {
+        method: 'GET',
+        headers: {
+            'x-rapidapi-key': 'bcba844d26msh2d333e852898b44p124f13jsn0e520c9be445',
+            'x-rapidapi-host': 'bhagavad-gita3.p.rapidapi.com'
+        }
+    };
+    
+    try {
+        let p = fetch(urlCh, options1);
+        p.then((response) => {
+            return response.json();
+        }).then((Gitach) => {
+            console.log(ChapterNumber, Gitach);
+            displaychpters(Gitach);
+        });
+    } catch (error) {
+        console.error(error);
     }
-};
-
-try {
-    let p = fetch(urlCh, options1);
-    p.then((response) => {
-        return response.json();
-    }).then((Gitach) => {
-        console.log(ChapterNumber, Gitach);
-        displaychpters(Gitach);
-    });
-} catch (error) {
-    console.error(error);
 }
 
 function displaychpters(Gitach) {
@@ -48,30 +51,31 @@ function displaychpters(Gitach) {
             `;
 
     document.getElementById("mcards").appendChild(main);
-
+    urlV();
 }
 
 
-
-var url = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/{ChapterNumber}/verses/`;
-console.log(url);
-const options = {
-    method: 'GET',
-    headers: {
-        'x-rapidapi-key': 'bcba844d26msh2d333e852898b44p124f13jsn0e520c9be445',
-        'x-rapidapi-host': 'bhagavad-gita3.p.rapidapi.com'
+function urlV() {
+    const url = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/${ChapterNumber}/verses/`;
+    console.log(url);
+    const options = {
+        method: 'GET',
+        headers: {
+            'x-rapidapi-key': 'bcba844d26msh2d333e852898b44p124f13jsn0e520c9be445',
+            'x-rapidapi-host': 'bhagavad-gita3.p.rapidapi.com'
+        }
+    };
+    
+    try {
+        let v = fetch(url, options);
+        v.then((response) => {
+            return response.json();
+        }).then((Gita) => {
+            displayverses(Gita);
+        });
+    } catch (error) {
+        console.error(error);
     }
-};
-
-try {
-    let v = fetch(url, options);
-    v.then((response) => {
-        return response.json();
-    }).then((Gita) => {
-        displayverses(Gita);
-    });
-} catch (error) {
-    console.error(error);
 }
 
 
