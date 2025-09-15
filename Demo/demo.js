@@ -123,7 +123,7 @@ function displayverses(Gita) {
 
 
 window.abc = function(vid) {
-    var urlv = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/${ChapterNumber}/verses/${vid}/`;
+    const urlv = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/${ChapterNumber}/verses/${vid}/`;
     console.log(urlv);
     const options2 = {
         method: 'GET',
