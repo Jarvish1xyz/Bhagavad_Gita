@@ -9,7 +9,7 @@ function Api() {
 
     useEffect(() => {
         const fetchChapters = async () => {
-            // const url = 'https://bhagavad-gita3.p.rapidapi.com/v2/chapters/?skip=0&limit=18';
+            const url = 'https://bhagavad-gita3.p.rapidapi.com/v2/chapters/?skip=0&limit=18';
             const options = {
                 method: 'GET',
                 headers: {

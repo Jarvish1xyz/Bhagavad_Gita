@@ -19,12 +19,32 @@
     padding: 2vh;
 }
 
+.coll {
+    font-weight: 100;
+}
+
+
+.slok-1 {
+    padding: 0vh 55vh;
+}
+
+.slok-2 {
+    padding: 0vh 40vh;
+}
+
+.slok-3 {
+    font-size: larger;
+    padding: 0vh 20vh;
+    /* padding: 0vh 10vh; */
+}
+
+
 .col-ch {
     transition: all 0.3s;
 }
 
 .col-ch:hover {
-    cursor: not-allowed;
+    cursor:pointer;
     border: 1px solid black;
 }
 
@@ -167,7 +187,7 @@ a {
 
 .CS {
     font-size: 2.8vh;
-    line-height: 1.8;
+    line-height: 1;
 }
 
 .abc:hover {
@@ -231,6 +251,11 @@ svg {
         /* keep center part */
         border: 0px;
         border-radius: 0px;
+    }
+
+    .slok-1, .slok-2, .slok-3 {
+        padding: 0vh;
+        list-style: 1;
     }
 
     .thumbnail {

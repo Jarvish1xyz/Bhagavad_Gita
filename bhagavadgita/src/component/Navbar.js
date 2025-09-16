@@ -30,10 +30,10 @@ function Navbar() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" onClick={() => navigate('/quotes')}>Quotes</a>
+                                    <a style={{cursor:'pointer'}} className="nav-link" onClick={() => navigate('/quotes')}>Quotes</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" onClick={() => navigate('/aboutgita')}>About Gita</a>
+                                    <a style={{cursor:'pointer'}} className="nav-link" onClick={() => navigate('/aboutgita')}>About Gita</a>
                                 </li>
                                 {/* <li className="nav-item">
                                     <a className="nav-link" onClick={() => navigate('/quotes')}>Disabled</a>

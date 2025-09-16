@@ -1,14 +1,15 @@
 import './style.css';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Explainv from './Explainv';
 
 function Vlist() {
-    const { idv } = useParams();
-    const [Verses, setVerses] = useState([]);
+    const { id, idv } = useParams();
+    const [verses, setVerses] = useState(null);
 
 
     useEffect(() => {
-        const urlv = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/${ChapterNumber}/verses/${vid}/`;
+        const urlv = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/${id}/verses/${idv}/`;
         console.log(urlv);
         const options2 = {
             method: 'GET',
@@ -28,23 +29,41 @@ function Vlist() {
         } catch (error) {
             console.error(error);
         }
-    }, [idv]);
+    }, [id, idv]);
 
     return (
         <>
-            <div className='col row row-cols-1 g-2 m-3 pqr p-3'>
-                <a className="d-flex flex-wrap w-100" onClick={() => handleChapterClick(chapter.id)} data-bs-toggle="collapse" href="#${collapse}" role="button" aria-expanded="false" aria-controls="${collapse}">
-                    <div className="col-12 col-lg-2">
-                        <span className="card-title card-ch">Verse ${Verses.verse_number}</span>
-                    </div>
-                    <div className="col-12 col-lg-10">
-                        ${description}
-                    </div>
-                </a>
-                <div className="collapse" id="${collapse}" data-bs-parent="#accordionGita">
-                    <div className="card card-body" id="${colPartId}" style="width: 100%;">
-
-                    </div>
+            <div class="box1 boxbar text-center" id="mcards" >
+                <Explainv />
+            </div>
+            <div class="box1 bodypart d-flex justify-content-center align-item-center" style={{height: '90vh'}}>
+                <div class="box p-2">
+                    {verses && (
+                        <>
+                            <div className=" w-100 coll">
+                                <div className='row m-5'>
+                                    <h2 class="card-title fw-bold text-center m-3">Translation</h2>
+                                    <h5 class="fw-normal mb-2 slok-3 lh-base">
+                                        {verses.translations
+                                            .filter(tr => tr.author_name === "Shri Purohit Swami")
+                                            .map((tr, index) => (
+                                                <p key={index} className="card-text mb-3">{tr.description}</p>
+                                            ))}
+                                    </h5>
+                                </div>
+                                <div className='row m-5'>
+                                    <h2 class="card-title text-center m-3">Commentary</h2>
+                                    <h5 class=" mb-2 slok-3 lh-base">
+                                        {verses.commentaries
+                                            .filter(tr => tr.author_name === "Swami Sivananda")
+                                            .map((tr, index) => (
+                                                <p key={index} className="card-text mb-3">{tr.description}</p>
+                                            ))}
+                                    </h5>
+                                </div>
+                            </div>
+                        </>
+                    )}
                 </div>
             </div>
         </>

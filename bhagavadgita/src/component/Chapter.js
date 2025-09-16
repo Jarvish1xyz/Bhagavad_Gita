@@ -46,7 +46,7 @@ function Chapter() {
             </div>
             <div class="box1 bodypart">
                 <div class="box p-2">
-                    <div id="vcards" class="container m-auto row ch row-cols-1" style={{width: '100vw'}}>
+                    <div id="vcards" class="container m-auto row ch row-cols-1" style={{ width: '100vw' }}>
 
                         {Verses.map((verse) => {
                             const description = verse.translations
