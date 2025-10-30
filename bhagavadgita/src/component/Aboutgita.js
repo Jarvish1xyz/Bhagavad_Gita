@@ -1,7 +1,14 @@
 import './style.css';
 import './About.css';
+import { useEffect } from 'react';
 
 function Aboutgita() {
+
+    useEffect(() => {
+        if (window.location.pathname === '/aboutgita') {
+            document.getElementById('loading').style.display = 'none';
+        }
+    }, []);
 
 
     return (
@@ -18,8 +25,8 @@ function Aboutgita() {
                 </div>
             </div>
 
-            <div className="box1 bodypart" style={{minHeight: '90vh'}}>
-                <div className="fs-4 box m-5 p-5 d-flex justify-content-center flex-column align-items-center">
+            <div className="box1 bodypart" style={{ minHeight: '70vh' }}>
+                <div className="fs-4 box ag d-flex justify-content-center flex-column align-items-center">
                     <p className='  slok-2'>
                         Bhagavad Gita, also known as the Gita - "The Song of The Lord" is a practical guide to one's life that guides one to re-organise their life, achieve inner peace and approach the Supreme Lord (the Ultimate Reality). It is a 700-verse text in Sanskrit which comprises chapters 23 through 40 in the Bhishma-Parva section of the Mahabharata.
                     </p>

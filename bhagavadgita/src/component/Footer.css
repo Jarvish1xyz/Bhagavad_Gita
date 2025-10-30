@@ -1,11 +1,11 @@
 .site-footer {
-  background-color: #1a1a1a;
-  color: #f0f0f0;
+  background-color: #f0f0f0;
+  color: #1a1a1a;
   padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
 }
 .site-footer a {
-  color: #f0f0f0;
+  color: #1a1a1a;
   text-decoration: none;
 }
 .site-footer a:hover {
@@ -78,4 +78,26 @@
   .footer-social {
     margin: 20px 0;
   }
+}
+
+
+
+.footer-verse {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.scroll-btn {
+  margin-top: 10px;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.scroll-btn:hover {
+  transform: scale(1.05);
+}
+
+.modal-content {
+  border-radius: 15px;
 }

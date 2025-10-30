@@ -40,7 +40,7 @@ function Explainv() {
                     <h5 class="fw-normal slok-2 mb-2 lh-base">{verse.transliteration}</h5>
                 </div>
                 <div className=' row m-4'>
-                    <h5 class="fw-normal mb-2 lh-base">{verse.word_meanings}</h5>
+                    <h5 class="fw-normal slok-2 mb-2 lh-base">{verse.word_meanings}</h5>
                 </div>
             </div>
         </>

@@ -35,7 +35,25 @@ function Chapter() {
         }
     }, [id]);
 
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            // behavior: 'auto'
+        });
+        if (Verses.length === 0) {
+            document.getElementById('loading').style.display = 'block';
+        }
+        if (Verses.length !== 0) {
+            document.getElementById('loading').style.display = 'none';
+        }
+    }, [Verses]);
+    
     const handleVerseClick = (idv) => {
+        window.scrollTo({
+            top: 0,
+            // behavior: 'auto'
+        });
+        document.getElementById('loading').style.display = 'block';
         navigate(`/chapter/${id}/verse/${idv}`);
     };
 
@@ -46,8 +64,12 @@ function Chapter() {
             </div>
             <div class="box1 bodypart">
                 <div class="box p-2">
-                    <div id="vcards" class="container m-auto row ch row-cols-1" style={{ width: '100vw' }}>
-
+                    <div id="vcards" class="container m-auto row ch row-cols-1" style={{ width: '100%' }}>
+                        <hr className='m-0' />
+                        <div className='m-3'>
+                            <div className='fs-5 fw-semibold'>{Verses.length} Verses</div>
+                        </div>
+                        <hr />
                         {Verses.map((verse) => {
                             const description = verse.translations
                                 .filter((tr) => tr.author_name === "Swami Gambirananda")
@@ -62,13 +84,8 @@ function Chapter() {
                             return (
                                 <>
 
-                                    <a
-                                        className="d-flex flex-wrap"
-                                        onClick={() => handleVerseClick(verse.verse_number)}
-                                        aria-controls={collapseId}
-                                    >
-                                        <div
-                                            className="col row row-cols-1 pqr p-3">
+                                    <div className="d-flex flex-wrap" onClick={() => handleVerseClick(verse.verse_number)} aria-controls={collapseId}>
+                                        <div className="col row row-cols-1 pqr p-3">
                                             <div className="col-12 col-lg-2">
                                                 <span className="card-title card-ch">
                                                     Verse {verse.verse_number}
@@ -76,7 +93,7 @@ function Chapter() {
                                             </div>
                                             <div className="col-12 col-lg-10">{description}</div>
                                         </div>
-                                    </a>
+                                    </div>
                                 </>
                             );
                         })}

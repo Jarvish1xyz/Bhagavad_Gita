@@ -184,14 +184,14 @@
 // import { Milan } from './demo';
 
 
-const url = 'https://bhagavad-gita3.p.rapidapi.com/v2/chapters/?skip=0&limit=18';
-const options = {
-    method: 'GET',
-    headers: {
-        'x-rapidapi-key': 'bcba844d26msh2d333e852898b44p124f13jsn0e520c9be445',
-        'x-rapidapi-host': 'bhagavad-gita3.p.rapidapi.com'
-    }
-};
+// const url = 'https://bhagavad-gita3.p.rapidapi.com/v2/chapters/?skip=0&limit=18';
+// const options = {
+//     method: 'GET',
+//     headers: {
+//         'x-rapidapi-key': 'bcba844d26msh2d333e852898b44p124f13jsn0e520c9be445',
+//         'x-rapidapi-host': 'bhagavad-gita3.p.rapidapi.com'
+//     }
+// };
 
 try {
     let p = fetch(url, options);

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhagavad Gita Quotes</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./quotes.css">
+</head>
+<body>
+
+    <div class="navbox p-3">
+        <nav class="navbar rounded-2 navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <h2>Bhagavad Gita</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Chapter
+                            </a>
+                            <ul class="dropdown-menu">
+                                <div class="row">
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/1.html">Chapter 1</a>
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/2.html">Chapter 2</a>
+                                </div>
+                                <div class="row">
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/3.html">Chapter 3</a>
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/4.html">Chapter 4</a>
+                                </div>
+                                <div class="row">
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/5.html">Chapter 5</a>
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/6.html">Chapter 6</a>
+                                </div>
+                                <div class="row">
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/7.html">Chapter 7</a>
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/8.html">Chapter 8</a>
+                                </div>
+                                <div class="row">
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/9.html">Chapter 9</a>
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/10.html">Chapter 10</a>
+                                </div>
+                                <div class="row">
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/11.html">Chapter 11</a>
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/12.html">Chapter 12</a>
+                                </div>
+                                <div class="row">
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/13.html">Chapter 13</a>
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/14.html">Chapter 14</a>
+                                </div>
+                                <div class="row">
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/15.html">Chapter 15</a>
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/16.html">Chapter 16</a>
+                                </div>
+                                <div class="row">
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/17.html">Chapter 17</a>
+                                    <a class="col m-1 col-ch abc rounded border border-1" href="../Chapter/18.html">Chapter 18</a>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./quotes.html">Quotes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./aboutgita.html">About Gita</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+  <!-- Header Section -->
+  <div class="boxim box1">
+    <div class="boxbar">
+      <img class="thumbnail img-fluid"
+           src="https://bhagavadgita.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fquotes-bg.1a3ed553.png&w=1920&q=75"
+           alt="">
+      <div class="text d-flex flex-wrap justify-content-center"
+           style="width: 80vh; margin: auto; position: absolute; top: 20%; left: 50%; transform: translateX(-50%);">
+        <h1 class="fw-bold display-4 text-light">Bhagavad Gita Quotes By Lord Krishna</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quotes Carousel -->
+  <div class="box1 bodypart">
+    <div class="box p-3">
+      <div id="quotesCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="carouselQuotes">
+          <!-- Quotes will be injected here by JavaScript -->
+        </div>
+
+        <!-- Custom SVG Controls -->
+        <button class="carousel-control-prev ps-5 custom-control" type="button" data-bs-target="#quotesCarousel" data-bs-slide="prev">
+          <svg fill="#000000" height="50px" width="50px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333 
+            c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256
+            S373.818,469.333,256,469.333z"/>
+            <path d="M313.752,134.248c-8.331-8.331-21.839-8.331-30.17,0L176.915,240.915c-8.331,8.331-8.331,21.839,0,30.17
+            l106.667,106.667c8.331,8.331,21.839,8.331,30.17,0c8.331-8.331,8.331-21.839,0-30.17L222.17,256l91.582-91.582
+            C322.083,156.087,322.083,142.58,313.752,134.248z"/>
+          </svg>
+        </button>
+
+        <button class="carousel-control-next pe-5 custom-control" type="button" data-bs-target="#quotesCarousel" data-bs-slide="next">
+          <svg fill="#000000" height="50px" width="50px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z 
+            M256,469.333c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,
+            469.333,256S373.818,469.333,256,469.333z"/>
+            <path d="M228.418,134.248c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17L289.83,256
+            l-91.582,91.582c-8.331,8.331-8.331,21.839,0,30.17c8.331,8.331,21.839,8.331,30.17,0l106.667-106.667
+            c8.331-8.331,8.331-21.839,0-30.17L228.418,134.248z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    const quotes = [
+      "Whenever dharma declines and the purpose of life is forgotten, I manifest myself on earth. I am born in every age to protect the good, to destroy evil, and to reestablish dharma.",
+      "As they approach me, so I receive them. All paths, Arjuna, lead to me.",
+      "I am the beginning, middle, and end of creation.",
+      "Among animals I am the lion; among birds, the eagle Garuda. I am Prahlada, born among the demons, and of all that measures, I am time.",
+      "I am death, which overcomes all, and the source of all beings still to be born.",
+      "Just remember that I am, and that I support the entire cosmos with only a fragment of my being.",
+      "Behold, Arjuna, a million divine forms, with an infinite variety of color and shape. Behold the gods of the natural world, and many more wonders never revealed before. Behold the entire cosmos turning within my body, and the other things you desire to see.",
+      "I am time, the destroyer of all; I have come to consume the world.",
+      "That one is dear to me who runs not after the pleasant or away from the painful, grieves not, lusts not, but lets things come and go as they happen.",
+      "Just as a reservoir is of little use when the whole countryside is flooded, scriptures are of little use to the illumined man or woman, who sees the Lord everywhere."
+    ];
+
+    const carouselContainer = document.getElementById("carouselQuotes");
+
+    quotes.forEach((quote, index) => {
+      const item = document.createElement("div");
+      item.className = `carousel-item ${index === 0 ? "active" : ""}`;
+      item.innerHTML = `
+        <div class="d-flex justify-content-center align-items-center"
+             style="height: 300px; background-color: #f8f9fa; padding: 20px;">
+          <h3 class="text-center" style="max-width: 700px;">
+            ${quote}
+          </h3>
+        </div>
+      `;
+      carouselContainer.appendChild(item);
+    });
+  </script>
+</body>
+</html>

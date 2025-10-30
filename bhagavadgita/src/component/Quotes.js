@@ -1,5 +1,6 @@
 import './style.css';
 import './Quotes.css';
+import { useEffect } from 'react';
 
 function Quotes() {
 
@@ -16,6 +17,12 @@ function Quotes() {
         "That one is dear to me who runs not after the pleasant or away from the painful, grieves not, lusts not, but lets things come and go as they happen.",
         "Just as a reservoir is of little use when the whole countryside is flooded, scriptures are of little use to the illumined man or woman, who sees the Lord everywhere."
     ];
+    
+    useEffect(()=> {
+        if(window.location.pathname==='/quotes'){
+            document.getElementById('loading').style.display='none';
+        }
+    }, []);
 
     return (
         <>
@@ -25,8 +32,8 @@ function Quotes() {
                         src="https://bhagavadgita.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fquotes-bg.1a3ed553.png&w=1920&q=75"
                         alt="" />
 
-                    <div className="text d-flex flex-wrap" style={{ width: '80vh' }}>
-                        <h1 className="fw-bold display-4 text-light">Bhagavad Gita Quotes By Lord Krishna</h1>
+                    <div className="text flex-wrap" style={{ width: '80vh' }}>
+                        <h1 className="fw-bold display-4 qt text-light">Bhagavad Gita Quotes By Lord Krishna</h1>
                     </div>
                 </div>
             </div>
@@ -67,6 +74,7 @@ function Quotes() {
                         >
                             {/* ⬅️ Custom SVG (Previous) */}
                             <svg
+                                className='svg'
                                 fill="#000000"
                                 height="50px"
                                 width="50px"
@@ -90,6 +98,7 @@ function Quotes() {
                         >
                             {/* ➡️ Custom SVG (Next) */}
                             <svg
+                                className='svg'
                                 fill="#000000"
                                 height="50px"
                                 width="50px"

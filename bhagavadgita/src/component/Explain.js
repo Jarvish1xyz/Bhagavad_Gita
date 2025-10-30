@@ -31,7 +31,7 @@ function Explain()  {
 
     return (
         <>
-            <div className="mainCh">
+            <div className="mainCh mb-2">
                 <h5 className="card-title card-ch">Chapter {Chapter.chapter_number}</h5>
                 <h2 className="card-subtitle mb-2 fw-bolder">{Chapter.name_translated}</h2>
                 <p className="card-text d-flex flex-wrap CS text-start">{Chapter.chapter_summary}</p>
