@@ -36,12 +36,12 @@ function Vlist() {
             top: 0,
             // behavior: 'auto'
         });
-        if (verse === null) {
-            document.getElementById('loading').style.display = 'block';
-        }
-        if (verse !== null) {
-            document.getElementById('loading').style.display = 'none';
-        }
+        // if (verse === null) {
+        //     document.getElementById('loading').style.display = 'block';
+        // }
+        // if (verse !== null) {
+        //     document.getElementById('loading').style.display = 'none';
+        // }
     }, [verse]);
 
     return (

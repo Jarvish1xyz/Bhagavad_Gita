@@ -35,12 +35,12 @@ function Api() {
             top: 0,
             // behavior: 'auto'
         });
-        if (chapters.length === 0) {
-            document.getElementById('loading').style.display = 'block';
-        }
-        if (chapters.length !== 0) {
-            document.getElementById('loading').style.display = 'none';
-        }
+        // if (chapters.length === 0) {
+        //     document.getElementById('loading').style.display = 'block';
+        // }
+        // if (chapters.length !== 0) {
+        //     document.getElementById('loading').style.display = 'none';
+        // }
     }, [chapters]);
 
     const handleChapterClick = (id) => {
@@ -48,7 +48,7 @@ function Api() {
             top: 0,
             // behavior: 'auto'
         });
-        document.getElementById('loading').style.display = 'block';
+        // document.getElementById('loading').style.display = 'block';
         navigate(`/chapter/${id}`);
     };
 

@@ -40,12 +40,12 @@ function Chapter() {
             top: 0,
             // behavior: 'auto'
         });
-        if (Verses.length === 0) {
-            document.getElementById('loading').style.display = 'block';
-        }
-        if (Verses.length !== 0) {
-            document.getElementById('loading').style.display = 'none';
-        }
+        // if (Verses.length === 0) {
+        //     document.getElementById('loading').style.display = 'block';
+        // }
+        // if (Verses.length !== 0) {
+        //     document.getElementById('loading').style.display = 'none';
+        // }
     }, [Verses]);
     
     const handleVerseClick = (idv) => {
@@ -53,7 +53,7 @@ function Chapter() {
             top: 0,
             // behavior: 'auto'
         });
-        document.getElementById('loading').style.display = 'block';
+        // document.getElementById('loading').style.display = 'block';
         navigate(`/chapter/${id}/verse/${idv}`);
     };
 
