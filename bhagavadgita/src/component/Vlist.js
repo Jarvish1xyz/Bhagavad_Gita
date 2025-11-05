@@ -30,18 +30,14 @@ function Vlist() {
             console.error(error);
         }
     }, [id, idv]);
-
     useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            // behavior: 'auto'
-        });
-        // if (verse === null) {
-        //     document.getElementById('loading').style.display = 'block';
-        // }
-        // if (verse !== null) {
-        //     document.getElementById('loading').style.display = 'none';
-        // }
+        window.scrollTo({top:0, behavior:'smooth'});
+        if (verse===null) {
+            document.getElementById('loading').style.display = 'flex';
+        }
+        else {
+            document.getElementById('loading').style.display = 'none';
+        }
     }, [verse]);
 
     return (

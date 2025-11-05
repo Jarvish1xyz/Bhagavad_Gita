@@ -22,6 +22,8 @@ function Api() {
                 const response = await fetch(url, options);
                 const data = await response.json();
                 setChapters(data);
+                console.log("fetch complete");
+                
             } catch (error) {
                 console.error('Error fetching chapters:', error);
             }
@@ -30,25 +32,19 @@ function Api() {
         fetchChapters();
     }, []);
 
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            // behavior: 'auto'
-        });
-        // if (chapters.length === 0) {
-        //     document.getElementById('loading').style.display = 'block';
-        // }
-        // if (chapters.length !== 0) {
-        //     document.getElementById('loading').style.display = 'none';
-        // }
+    useEffect(()=> {
+        window.scrollTo({top:0, behavior:'smooth'});
+        if(chapters.length===0) {
+            document.getElementById('loading').style.display = 'flex';
+        }
+        else {
+            document.getElementById('loading').style.display = 'none';
+        }
     }, [chapters]);
 
     const handleChapterClick = (id) => {
-        window.scrollTo({
-            top: 0,
-            // behavior: 'auto'
-        });
-        // document.getElementById('loading').style.display = 'block';
+        window.scrollTo({top:0, behavior:'smooth'});
+        document.getElementById('loading').style.display = 'flex';
         navigate(`/chapter/${id}`);
     };
 

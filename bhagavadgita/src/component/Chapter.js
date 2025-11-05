@@ -36,24 +36,18 @@ function Chapter() {
     }, [id]);
 
     useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            // behavior: 'auto'
-        });
-        // if (Verses.length === 0) {
-        //     document.getElementById('loading').style.display = 'block';
-        // }
-        // if (Verses.length !== 0) {
-        //     document.getElementById('loading').style.display = 'none';
-        // }
+        window.scrollTo({top:0, behavior:'smooth'});
+        if (Verses.length === 0) {
+            document.getElementById('loading').style.display = 'flex';
+        }
+        else {
+            document.getElementById('loading').style.display = 'none';
+        }
     }, [Verses]);
-    
+
     const handleVerseClick = (idv) => {
-        window.scrollTo({
-            top: 0,
-            // behavior: 'auto'
-        });
-        // document.getElementById('loading').style.display = 'block';
+        window.scrollTo({top:0, behavior:'smooth'});
+        document.getElementById('loading').style.display = 'flex';
         navigate(`/chapter/${id}/verse/${idv}`);
     };
 

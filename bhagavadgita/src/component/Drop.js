@@ -46,9 +46,9 @@ function Drop() {
             {getChapterRows().map((pair, rowIndex) => (
                 <div className="row" key={rowIndex}>
                     {pair.map((chapter) => (
-                        <a onClick={() => handleChapterClick(chapter.id)} className="col m-1 col-ch abc rounded border border-1 ">
+                        <div onClick={() => handleChapterClick(chapter.id)} className="col m-1 col-ch abc rounded border border-1 ">
                             Chapter {chapter.id}
-                        </a>
+                        </div>
                     ))}
                 </div>
             ))}

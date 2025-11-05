@@ -15,12 +15,9 @@ function Home() {
                         <h1 className="fw-bold display-4 text-light">Experience the Gita</h1>
                         <h2 className="fw-bold display-6 text-warning">Anywhere, Anytime</h2>
                         <div onClick={() => {
-                            document.getElementById('loading').style.display = 'block';
+                            window.scrollTo({top:0, behavior:'smooth'});
+                            document.getElementById('loading').style.display = 'flex';
                             navigate('/chapter/1');
-                            window.scrollTo({
-                                top: 0,
-                                // behavior: 'auto'
-                            });
                         }} style={{ cursor: 'pointer' }} className="btn btn-light mt-3">Read now</div>
                     </div>
                 </div>
