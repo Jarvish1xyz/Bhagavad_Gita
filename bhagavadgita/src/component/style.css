@@ -214,10 +214,13 @@ a {
 
 .abc {
     cursor: pointer;
-    /* transition: all 0.3s; */
+
     animation: fadeUp linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 80%;
+    animation-fill-mode: both;
+
+    will-change: transform, opacity;
 }
 
 @keyframes fadeUp {
