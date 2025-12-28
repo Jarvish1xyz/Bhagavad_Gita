@@ -52,7 +52,7 @@ function Api() {
         <>
             {chapters.map((chapter) => (
                 <div className="col mt-1 mb-1" key={chapter.id}>
-                    <div onClick={() => handleChapterClick(chapter.id)} className="card abc chapter-link" style={{ width: '100%', height: '100%' }}>
+                    <div onClick={() => handleChapterClick(chapter.id)} className="newAni card abc chapter-link" style={{ width: '100%', height: '100%' }}>
                         <div className="card-body">
                             <h6 className="card-title card-ch">Chapter {chapter.id}</h6>
                             <h6 className="h2 card-title mb-2">{chapter.name_translated}</h6>
