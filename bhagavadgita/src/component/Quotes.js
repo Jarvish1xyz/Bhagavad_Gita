@@ -29,7 +29,7 @@ function Quotes() {
             <div className='boxim box1'>
                 <div className="boxbar">
                     <img className="thumbnail img-fluid"
-                        src="https://share.google/fe41LFYTz6v1r9CP7"
+                        src="./bg_krishnaji_landscape.webp"
                         alt="" />
 
                     <div className="text flex-wrap" style={{ width: '80vh' }}>
