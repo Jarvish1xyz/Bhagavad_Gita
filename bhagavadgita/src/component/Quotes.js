@@ -29,7 +29,7 @@ function Quotes() {
             <div className='boxim box1'>
                 <div className="boxbar">
                     <img className="thumbnail img-fluid"
-                        src="./bg_krishnaji_landscape.webp"
+                        src="https://lifeispositive.com/wp-content/uploads/2025/07/bhagavad-gita-motivational-quotes-by-lord-krishna-painting-depicting-divine-chariot-pulled-by-white-horses.jpg"
                         alt="" />
 
                     <div className="text flex-wrap" style={{ width: '80vh' }}>
