@@ -29,7 +29,7 @@ function Quotes() {
             <div className='boxim box1'>
                 <div className="boxbar">
                     <img className="thumbnail img-fluid"
-                        src="https://bhagavadgita.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fquotes-bg.1a3ed553.png&w=1920&q=75"
+                        src="https://share.google/fe41LFYTz6v1r9CP7"
                         alt="" />
 
                     <div className="text flex-wrap" style={{ width: '80vh' }}>
