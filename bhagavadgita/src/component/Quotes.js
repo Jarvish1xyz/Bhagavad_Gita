@@ -30,7 +30,7 @@ function Quotes() {
                 <div className="boxbar">
                     <img className="thumbnail img-fluid"
                         src="https://lifeispositive.com/wp-content/uploads/2025/07/bhagavad-gita-motivational-quotes-by-lord-krishna-painting-depicting-divine-chariot-pulled-by-white-horses.jpg"
-                        alt="" />
+                        alt="This image can't loaded due tu some reason." />
 
                     <div className="text flex-wrap" style={{ width: '80vh' }}>
                         <h1 className="fw-bold display-4 qt text-light">Bhagavad Gita Quotes By Lord Krishna</h1>
